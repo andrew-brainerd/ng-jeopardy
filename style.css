@@ -1,0 +1,13 @@
+body {
+  background: #999999;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  width: 75px;
+}
+
+input[type=text] {
+
+}
