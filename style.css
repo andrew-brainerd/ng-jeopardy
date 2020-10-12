@@ -1,13 +1,29 @@
 body {
+  align-items: center;
   background: #999999;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  margin: 25px auto;
+  min-height: 100vh;
+  text-align: center;
 }
 
-label {
-  display: inline-block;
-  text-align: right;
-  width: 75px;
+.imageContainer {
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  margin: 25px auto 10px auto;
+  overflow: hidden;
+  padding: 25px;
+  transition: 0.3s all ease-in;
 }
 
-input[type=text] {
-
+img {
+  object-fit: contain;
+  height: 95%;
+  width: 95%;
 }
