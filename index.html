@@ -7,8 +7,8 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
-<body>
-  <div ng-app="imageViewer">
+<body ng-app="app">
+  <div>
     <div ng-controller="ImageViewerController">
       <div class="imageContainer" ng-show="imageSrc">
         <img ng-src="{{imageSrc}}" title="{{imageTitle}}" alt="{{imageTitle}}" />
@@ -20,6 +20,8 @@
     </div>
   </div>
   <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+  <script src="env.js"></script>
+  <script src="app.js"></script>
   <script src="image-viewer.controller.js"></script>
   <script src="giphy.service.js"></script>
 </body>

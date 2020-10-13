@@ -1,4 +1,4 @@
-var app = angular.module('imageViewer', []);
+var app = angular.module('app');
 
 var ImageViewerController = function($scope, giphy, $interval) {
   $scope.tag = 'turtle';
