@@ -4,10 +4,40 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: calc(10px + 2vmin);
-  margin: 25px auto;
-  min-height: 100vh;
+  margin: 0;
   text-align: center;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.viewContainer {
+  width: 100%;
+}
+
+.nav {
+  background: black;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.nav a.active {
+  color: pink;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: yellow;
 }
 
 .imageContainer {

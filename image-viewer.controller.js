@@ -19,7 +19,7 @@ var ImageViewerController = function($scope, giphy, $interval) {
   $scope.randomize = getRandomGif;
 
   getRandomGif();
-  $interval(getRandomGif, 5000);
+  $interval(getRandomGif, 10000);
 };
 
 app.controller('ImageViewerController', ['$scope', 'giphy', '$interval', ImageViewerController]);

@@ -1,0 +1,9 @@
+<div ng-controller="ImageViewerController">
+  <div class="imageContainer" ng-show="imageSrc">
+    <img ng-src="{{imageSrc}}" title="{{imageTitle}}" alt="{{imageTitle}}" />
+  </div>
+  <div class="controls">
+    <input type="text" ng-model="tag" />
+    <button ng-click="randomize()">Randomize</button>
+  </div>
+</div>
