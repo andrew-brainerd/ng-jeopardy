@@ -1,9 +1,13 @@
 var JeopardyController = function ($scope, jeopardy) {
   var onStatsSuccess = function (response) {
-    console.log('Question:', response);
-  }
+    $scope.question = response;
+  };
 
-  jeopardy.getRandomQuestion().then(onStatsSuccess);
+  $scope.getNextQuestion = function () {
+    jeopardy.getRandomQuestion().then(onStatsSuccess);
+  };
+
+  $scope.getNextQuestion();
 };
 
 angular
