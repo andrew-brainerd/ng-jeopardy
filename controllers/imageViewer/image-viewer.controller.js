@@ -1,16 +1,16 @@
-var ImageViewerController = function($scope, giphy, $interval) {
+var ImageViewerController = function ($scope, giphy, $interval) {
   $scope.tag = 'dance';
 
-  var onRequestSuccess = function(response) {
+  var onRequestSuccess = function (response) {
     $scope.imageSrc = response.data.data.images.original.url;
     $scope.imageTitle = response.data.data.title;
   };
 
-  var onRequestError = function(error) {
+  var onRequestError = function (error) {
     console.error(error);
   };
 
-  var getRandomGif = function() {
+  var getRandomGif = function () {
     giphy.getRandomGif($scope.tag).then(onRequestSuccess, onRequestError);
   };
 

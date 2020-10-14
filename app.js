@@ -16,8 +16,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state('viewer', {
     url: '/viewer',
-    templateUrl: 'image-viewer.html',
+    templateUrl: 'controllers/imageViewer/image-viewer.html',
     controller: 'ImageViewerController'
+  });
+
+  $stateProvider.state('jeopardy', {
+    url: '/jeopardy',
+    templateUrl: 'controllers/jeopardy/jeopardy.html',
+    controller: 'JeopardyController'
   });
 
   $stateProvider.state('notFound', {
