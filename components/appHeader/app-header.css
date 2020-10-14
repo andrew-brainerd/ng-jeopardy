@@ -1,0 +1,25 @@
+.appHeader {
+  width: 100%;
+}
+
+.header {
+  background: black;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.header a.active {
+  color: pink;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: yellow;
+}

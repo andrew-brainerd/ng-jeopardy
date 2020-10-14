@@ -1,7 +1,5 @@
-var app = angular.module('app');
-
 var ImageViewerController = function($scope, giphy, $interval) {
-  $scope.tag = 'turtle';
+  $scope.tag = 'dance';
 
   var onRequestSuccess = function(response) {
     $scope.imageSrc = response.data.data.images.original.url;
@@ -22,4 +20,6 @@ var ImageViewerController = function($scope, giphy, $interval) {
   $interval(getRandomGif, 10000);
 };
 
-app.controller('ImageViewerController', ['$scope', 'giphy', '$interval', ImageViewerController]);
+angular
+  .module('app')
+  .controller('ImageViewerController', ['$scope', 'giphy', '$interval', ImageViewerController]);

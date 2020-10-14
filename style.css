@@ -18,28 +18,7 @@ h1 {
   width: 100%;
 }
 
-.nav {
-  background: black;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 10px 0;
-  width: 100%;
-}
-
-.nav a.active {
-  color: pink;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav a:hover {
-  color: yellow;
-}
-
+/* Image Viewer */
 .imageContainer {
   align-items: center;
   position: relative;
@@ -52,7 +31,7 @@ h1 {
   transition: 0.3s all ease-in;
 }
 
-img {
+.imageContainer img {
   object-fit: contain;
   height: 95%;
   width: 95%;

@@ -5,18 +5,17 @@
   <meta charset="UTF-8">
   <title>First Angular Project</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="components/appHeader/app-header.css" />
 </head>
 
 <body ng-app="app">
-  <div class="nav">
-    <a ui-sref="home" ui-sref-active="active">Home</a>
-    <a ui-sref="viewer" ui-sref-active="active">GIF Viewer</a>
-  </div>
+  <app-header class="appHeader"></app-header>
   <div class="viewContainer" ui-view></div>
   <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
   <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
   <script src="env.js"></script>
   <script src="app.js"></script>
+  <script src="components/appHeader/app-header.component.js"></script>
   <script src="image-viewer.controller.js"></script>
   <script src="giphy.service.js"></script>
 </body>
