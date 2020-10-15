@@ -2,8 +2,6 @@
   function JeopardyQuestionController($scope) {
     var $ctrl = this;
 
-    $scope.answer = null;
-
     $scope.showAnswer = function () {
       $scope.answer = $ctrl.answer;
     };

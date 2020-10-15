@@ -1,0 +1,17 @@
+.jeopardyQuestion {
+  height: 70vh;
+  margin: 25px auto;
+  width: 80%;
+}
+
+.jeopardyQuestion .questionText {
+  align-items: center;
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  margin: 25px auto;
+}
+
+.jeopardyQuestion .answerText {
+  margin: 50px auto;
+}
