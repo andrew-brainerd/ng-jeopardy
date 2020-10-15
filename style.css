@@ -1,6 +1,6 @@
 body {
   align-items: center;
-  background: #999999;
+  background: #7a7a7a;
   color: white;
   display: flex;
   flex-direction: column;
@@ -12,14 +12,15 @@ body {
 
 h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 50px auto;
 }
 
-.viewContainer {
+.view-container {
   width: 100%;
 }
 
 /* Image Viewer */
-.imageContainer {
+.image-container {
   align-items: center;
   position: relative;
   display: flex;
@@ -31,8 +32,13 @@ h1 {
   transition: 0.3s all ease-in;
 }
 
-.imageContainer img {
+.image-container img {
   object-fit: contain;
   height: 95%;
   width: 95%;
+}
+
+.controls input[type=text] {
+  display: inline-block;
+  width: 250px;
 }

@@ -1,10 +1,10 @@
-.jeopardyQuestion {
+.jeopardy-question {
   height: 70vh;
   margin: 25px auto;
   width: 80%;
 }
 
-.jeopardyQuestion .questionText {
+.jeopardy-question .question-text {
   align-items: center;
   display: flex;
   height: 30%;
@@ -12,6 +12,6 @@
   margin: 25px auto;
 }
 
-.jeopardyQuestion .answerText {
+.jeopardy-question .answer-text {
   margin: 50px auto;
 }

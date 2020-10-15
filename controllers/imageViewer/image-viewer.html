@@ -1,7 +1,7 @@
-<div class="imageContainer" ng-show="imageSrc">
+<div class="image-container" ng-show="imageSrc">
   <img ng-src="{{imageSrc}}" title="{{imageTitle}}" alt="{{imageTitle}}" />
 </div>
 <div class="controls">
-  <input type="text" ng-model="tag" />
-  <button ng-click="randomize()">Randomize</button>
+  <input type="text" class="form-control tag-input" ng-model="tag" />
+  <button class="btn btn-primary" ng-click="randomize()">Randomize</button>
 </div>

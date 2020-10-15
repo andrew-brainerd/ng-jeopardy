@@ -1,6 +1,6 @@
-<div class="jeopardyQuestion">
-  <div class="questionText">{{$ctrl.text}}</div>
+<div class="jeopardy-question">
+  <div class="question-text">{{$ctrl.text}}</div>
   <button class="btn btn-success" ng-click="showAnswer()">Reveal Answer</button>
   <button class="btn btn-primary" ng-click="nextQuestion()">Next Question</button>
-  <div class="answerText" ng-show="answer">{{answer}}</div>
+  <div class="answer-text" ng-show="answer" ng-bind-html="answer"></div>
 </div>

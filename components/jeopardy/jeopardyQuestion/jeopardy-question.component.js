@@ -1,9 +1,9 @@
 (function () {
-  function JeopardyQuestionController($scope) {
+  function JeopardyQuestionController($scope, $sce) {
     var $ctrl = this;
 
     $scope.showAnswer = function () {
-      $scope.answer = $ctrl.answer;
+      $scope.answer = $sce.trustAsHtml($ctrl.answer);
     };
 
     $scope.nextQuestion = function () {
