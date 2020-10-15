@@ -1,5 +1,5 @@
 <div class="jeopardy-question">
-  <div class="question-text">{{$ctrl.text}}</div>
+  <div class="question-text" ng-bind-html="text"></div>
   <button class="btn btn-success" ng-click="showAnswer()">Reveal Answer</button>
   <button class="btn btn-primary" ng-click="nextQuestion()">Next Question</button>
   <div class="answer-text" ng-show="answer" ng-bind-html="answer"></div>

@@ -2,6 +2,10 @@
   function JeopardyQuestionController($scope, $sce) {
     var $ctrl = this;
 
+    $ctrl.$onChanges = function () {
+      $scope.text = $sce.trustAsHtml($ctrl.text);
+    };
+
     $scope.showAnswer = function () {
       $scope.answer = $sce.trustAsHtml($ctrl.answer);
     };
