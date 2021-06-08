@@ -4,7 +4,7 @@ if (window) {
   Object.assign(env, window.__env);
 }
 
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router', 'react']);
 
 app.constant('__env', env);
 
@@ -24,6 +24,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     url: '/jeopardy',
     templateUrl: 'controllers/jeopardy/jeopardy.html',
     controller: 'JeopardyController'
+  });
+
+  $stateProvider.state('react', {
+    url: '/react',
+    templateUrl: 'controllers/react/react.html',
+    controller: 'ReactController'
   });
 
   $stateProvider.state('notFound', {

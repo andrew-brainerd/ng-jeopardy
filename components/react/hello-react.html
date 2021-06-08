@@ -1,0 +1,13 @@
+<div class="controls">
+  <input
+    type="text"
+    class="form-control"
+    ng-model="$ctrl.name"
+    ng-change="$ctrl.updateName()"
+  />
+</div>
+<react-component
+  name="HelloReact"
+  props="$ctrl.props"
+  watch-depth="reference"
+/>
