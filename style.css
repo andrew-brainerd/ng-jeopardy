@@ -19,7 +19,6 @@ h1 {
   width: 100%;
 }
 
-/* Image Viewer */
 .image-container {
   align-items: center;
   position: relative;
@@ -36,6 +35,10 @@ h1 {
   object-fit: contain;
   height: 95%;
   width: 95%;
+}
+
+.controls {
+  margin-top: 10px;
 }
 
 .controls input[type=text] {

@@ -3,10 +3,8 @@ var HelloReact = React.createClass({
     name: React.PropTypes.string.isRequired
   },
   render: function() {
-    return React.createElement(
-      'h1',
-      null,
-      'Hello, ' + this.props.name
+    return (
+      <h1>Hello {this.props.name}</h1>
     );
   }
 });
